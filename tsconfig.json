@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2015",
+      "ESNext",
+      "dom"
+    ],
+    "paths": {
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@editors/*": [
+        "src/app/editors/*"
+      ],
+      "@dashboard/*": [
+        "src/app/dashboard/*"
+      ],
+      "@env": [
+        "src/environments/environment"
+      ]
+    },
+    "useDefineForClassFields": true
+  },
+  "angularCompilerOptions": {
+    "allowEmptyCodegenFiles": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictTemplates": true
+  }
+}
